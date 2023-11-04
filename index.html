@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сократика</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./global.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img class="logo__image" src="" />
+        <h1 class="logo__name">Cократика</h1>
+      </div>
+    </header>
+    <main class="page">
+      <section class="main__choose">
+        <h1 class="main__header">01 Заполни форму</h1>
+        <div class="theme__class">
+          <fieldset>
+            <legend>Тема урока</legend>
+            <input type="text" placeholder="Выбери тему урока" />
+          </fieldset>
+          <nav class="dws__menu">
+            <fieldset>
+              <legend>Класс</legend>
+              <label for="menu" class="toggle__menu"
+                ><i class="fa fa-bars">Выбери</i></label
+              >
+              <input
+                type="checkbox"
+                checked="checked"
+                name="toggle"
+                id="menu"
+                class="toggle__menu"
+                placeholder="Выбери класс"
+              />
+
+              <ul class="">
+                <li class="class__number">1</li>
+                <li class="class__number">2</li>
+                <li class="class__number">3</li>
+                <li class="class__number">4</li>
+                <li class="class__number">5</li>
+              </ul>
+            </fieldset>
+          </nav>
+        </div>
+        <ul class="lesson__themes">
+          <li class="lesson">Генетик</li>
+          <li class="lesson">Анатомия человека</li>
+          <li class="lesson">Вулканы</li>
+          <li class="lesson">Зимние виды спорта</li>
+          <li class="lesson">Радуга</li>
+          <li class="lesson">Индийская культура</li>
+        </ul>
+        <button class="more__button">Показать больше вариантов</button>
+        <fieldset>
+          <legend>Цель урока</legend>
+          <input type="text" placeholder="Напиши здесь свою учебную цель" />
+        </fieldset>
+      </section>
+      <footer class="footer">
+        <form class="footer__form">
+          <button class="footer__button" name="button" form="#" type="button">
+            Назад
+          </button>
+          <button
+            class="footer__button button__next-step"
+            name="button"
+            form="#"
+            type="submit"
+          >
+            Следующий шаг
+          </button>
+        </form>
+      </footer>
+    </main>
+  </body>
+</html>

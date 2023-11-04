@@ -1,0 +1,182 @@
+body {
+    font-family: sans-serif;
+    width: 50%; /* остальное под фото и отступы */
+  }
+  .main__header {
+    padding-bottom: 50px;
+    font-size: 40px;
+  }
+  
+  legend {
+    margin-left: 10px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo__name {
+    font-weight: 700;
+    font-size: clamp(1.125rem, 0.2583rem + 3.698vw, 2.625rem);
+    margin-inline-start: 40px;
+  }
+  
+  .page {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+  }
+  
+  .main__choose {
+    margin-top: 20px;
+  }
+  
+  .main__choose h1 {
+    margin-bottom: 10px;
+  }
+  
+  .blue:hover {
+    background-color: lightblue;
+    color: white;
+  }
+  
+  .theme__class {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  fieldset {
+    border: 1.5px solid gray;
+    border-radius: 10px;
+  
+    width: 100%;
+    margin: 10px;
+  }
+  
+  input[type="text"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 95%;
+    background: transparent;
+    border: 0;
+    max-width: 500px;
+    margin: 10px;
+  }
+  
+  input:focus {
+      outline: 0;
+  }
+  
+  .toggle__menu {
+    margin: 0;
+  }
+  
+  .footer {
+    margin-top: 60px;
+  }
+  
+  .footer__button {
+    width: 15%;
+    font-size: 12px;
+    border: 1px solid lightblue;
+    border-radius: 15px;
+    background: transparent;
+    color: lightblue;
+    height: 50px;
+  }
+  
+  .footer__button:first-child {
+    margin-right: 10px;
+  }
+  
+  .button__next-step {
+    width: 30%;
+    color: gray;
+    background: lightgray;
+    border-color: lightgray;
+  }
+  
+  .dws__menu {
+    position: relative;
+    margin-left: 20px;
+  }
+  
+  .dws__menu [type="checkbox"] {
+    display: none;
+  }
+  
+  .dws__menu label.toggle__menu {
+    background: transparent;
+    display: block;
+  
+    padding: 15px 30px;
+    cursor: pointer;
+  }
+  
+  .dws__menu ul {
+    display: none;
+  }
+  
+  input.toggle__menu:checked + label.toggle__menu {
+    background: transparent;
+    color: lightblue;
+  }
+  
+  input.toggle__menu:checked ~ ul {
+    display: block;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+  
+    padding-inline-start: 10px;
+    border: 1px solid gray;
+    border-radius: 5%;
+  }
+  
+  .class__number {
+    padding-block-end: 5px;
+  }
+  
+  .lesson__themes {
+    max-width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+  }
+  
+  .lesson {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    border-radius: 15px;
+    white-space: pre;
+  }
+  
+  .more__button {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+    color: lightblue;
+  }
+  
+  .more__button::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inline-size: 25px;
+    block-size: 25px;
+    border-inline-end: 1px solid lightblue;
+    border-block-start: 1px solid lightblue;
+    inset-inline-start: -25px;
+  }
+  
